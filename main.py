@@ -1,6 +1,6 @@
 import cv2
 import cv2 as cv
-from gtts import gTTS
+from gtts import gTTS # 구글 TTS 서비스 이용하기 위해
 import torch # 토치 추가
 import numpy as np
 import time
@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import math
 import os
 import subprocess
-from playsound import playsound
+from playsound import playsound # 소리를 실행하기 위해해
 from PIL import Image
 
 
