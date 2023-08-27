@@ -13,9 +13,9 @@ from PIL import Image
 
 
 
-filepath = './02.webm'
+filepath = './02.webm' # 동영상 파일 경로
 video = cv2.VideoCapture(filepath) #'' 사이에 사용할 비디오 파일의 경로 및 이름을 넣어주도록 함
-# video.set(cv2.CAP_PROP_POS_FRAMES, 30000)
+# video.set(cv2.CAP_PROP_POS_FRAMES, 30000) # 만약, 정해진 지점 이후로 재생하고 싶다면 넣는 코드
 # good_audio_path = 'audio.mp3'
 # bad_audio_path = 
 
