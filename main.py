@@ -37,7 +37,7 @@ x2, y2, w2, h2 = 660, 13, 18, 20 # 상대팀 점수 올라갈 때 필요한 변�
 text=""
 
 
-while video.isOpened():
+while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디오가 열리기만 하면 무한 반복이다.)
     run, frame = video.read()
     if not run:
         print("[프레임 수신 불가] - 종료합니다")
@@ -52,7 +52,7 @@ while video.isOpened():
 
     # 우리팀 점수
     x, y, w, h = 613, 13, 18, 20
-    crop_img = frame[y:y+h, x:x+w]
+    crop_img = frame[y:y+h, x:x+w] # 점수가 나와있는 부분을 자른 이미지
     avg_color_per_row = np.average(crop_img, axis=1)
 
     # 상대팀 점수(점수가 뒤에 생긴다!)
