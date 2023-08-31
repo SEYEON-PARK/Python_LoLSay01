@@ -89,8 +89,8 @@ while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디
         playsound("./sound/addOnePoint.mp3")
         text=str(myTeam)+"대"+str(redTeam)+"이에요!" # 현재 스코어에 맞는 텍스트 생성
         tts = gTTS(text=text, lang='ko')
-        avg_color1 = np.average(avg_color_per_row, axis=1)[2]
-        avg_color2 = np.average(avg_color_per_row, axis=1)[16]
+        avg_color1 = np.average(avg_color_per_row, axis=1)[2] # 스코어가 올라갈 때 차이가 많이나는 요소 1
+        avg_color2 = np.average(avg_color_per_row, axis=1)[16] # 스코어가 올라갈 때 차이가 많이나는 요소 2
         if(myTeam==2):
             gap2=15
         elif(myTeam==3):
