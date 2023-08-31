@@ -124,8 +124,8 @@ while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디
         text=str(myTeam)+"대"+str(redTeam)+"이에요!"
         tts = gTTS(text=text, lang='ko')
         print("red", redTeam, avg_color3)
-        avg_color3 = np.average(avg_color_per_row2, axis=1)[16]
-        avg_color4 = np.average(avg_color_per_row2, axis=1)[2]
+        avg_color3 = np.average(avg_color_per_row2, axis=1)[16] # 스코어가 올라갈 때 차이가 많이나는 요소 1
+        avg_color4 = np.average(avg_color_per_row2, axis=1)[2] # 스코어가 올라갈 때 차이가 많이나는 요소 2
         if(redTeam==2):
             gap3=20
         elif(redTeam==3):
