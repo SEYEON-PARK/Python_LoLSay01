@@ -56,7 +56,7 @@ while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디
     avg_color_per_row = np.average(crop_img, axis=1)
 
     # 상대팀 점수(점수가 뒤에 생긴다!)
-    crop_img2 = frame[y2:y2+h2, x2:x2+w2]
+    crop_img2 = frame[y2:y2+h2, x2:x2+w2] # 점수가 나와있는 부분을 자른 이미지
     avg_color_per_row2 = np.average(crop_img2, axis=1)
 
     if(np.average(avg_color_per_row, axis=1)[16]<20):
