@@ -61,21 +61,21 @@ while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디
 
     if(np.average(avg_color_per_row, axis=1)[16]<20):
         if(myTeam>redTeam):
-            text="이겼어요! 축하해요~"
+            text="이겼어요! 축하해요~" # 텍스트 문자열
             tts = gTTS(text=text, lang='ko')
             tts.save("./sound/end.mp3") # TTS 음성 파일 생성 및 저장
             playsound("./sound/good1.mp3") # 음성 파일 실행하기
             playsound("./sound/end.mp3") # 음성 파일 실행하기
             os.remove("./sound/end.mp3") # 만든 파일은 바로 지우기!
         elif(myTeam<redTeam):
-            text="졌어요. 아쉬워요."
+            text="졌어요. 아쉬워요." # 텍스트 문자열
             tts = gTTS(text=text, lang='ko')
             tts.save("./sound/end.mp3") # TTS 음성 파일 생성 및 저장
             playsound("./sound/bad1.mp3") # 음성 파일 실행하기
             playsound("./sound/end.mp3") # 음성 파일 실행하기
             os.remove("./sound/end.mp3") # 만든 파일은 바로 지우기!
         else:
-            text="비겼어요. 다음에는 이겨봐요!"
+            text="비겼어요. 다음에는 이겨봐요!" # 텍스트 문자열
             tts = gTTS(text=text, lang='ko')
             tts.save("./sound/end.mp3") # TTS 음성 파일 생성 및 저장
             playsound("./sound/end.mp3") # 음성 파일 실행하기
