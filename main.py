@@ -131,7 +131,7 @@ while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디
         elif(redTeam==3):
             gap3=10
         elif(redTeam==9): # 뒤에 숫자(1의 자리)를 봐야 함!
-            x2, y2, w2, h2 = 672, 13, 15, 20
+            x2, y2, w2, h2 = 672, 13, 15, 20 # 잘라야 하는 위치 변경!
             avg_color3=20
             avg_color4=24
             count+=1
