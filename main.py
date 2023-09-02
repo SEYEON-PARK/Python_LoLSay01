@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import math
 import os # 만든 파일을 바로 지우기 위해
 import subprocess
-from playsound import playsound # 소리를 실행하기 위해해
+from playsound import playsound # 소리를 실행하기 위해
 from PIL import Image
 
 
