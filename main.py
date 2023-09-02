@@ -137,7 +137,7 @@ while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디
             count+=1
             print("red 숫자 조정")
         tts.save("./sound/now.mp3")
-        playsound("./sound/now.mp3")
+        playsound("./sound/now.mp3") # 음성 파일 실행하기
         os.remove("./sound/now.mp3") # 만든 파일은 바로 지우기!
     
 video.release()
