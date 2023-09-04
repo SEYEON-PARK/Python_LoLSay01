@@ -1,5 +1,5 @@
 import cv2
-import cv2 as cv
+import cv2 as cv # cv2를 cv라고 부르겠다는 의미
 from gtts import gTTS # 구글 TTS 서비스 이용하기 위해
 import torch # 토치 추가
 import numpy as np
