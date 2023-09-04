@@ -141,4 +141,4 @@ while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디
         os.remove("./sound/now.mp3") # 만든 파일은 바로 지우기!
     
 video.release()
-cv2.destroyAllWindows()
+cv2.destroyAllWindows() # 화면 없애기
