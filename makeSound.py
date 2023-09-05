@@ -1,4 +1,4 @@
-from gtts import gTTS
+from gtts import gTTS # TTS를 구현하기 위해
 from playsound import playsound
 
 text ="우리팀이 1점 얻었어요." # 텍스트 문자열
