@@ -4,7 +4,7 @@ from playsound import playsound
 text ="우리팀이 1점 얻었어요." # 텍스트 문자열
 
 tts = gTTS(text=text, lang='ko')
-tts.save("./sound/addOnePoint.mp3") # 음원 파일 저장
+tts.save("./sound/addOnePoint.mp3") # 음성 파일 저장
 playsound("./sound/addOnePoint.mp3") # 음성 파일 실행하기
 
 
