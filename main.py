@@ -40,7 +40,7 @@ text=""
 while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디오가 열리기만 하면 무한 반복이다.)
     run, frame = video.read()
     if not run: # 비디오가 읽히지 않는다면
-        print("[프레임 수신 불가] - 종료합니다")
+        print("[프레임 수신 불가] - 종료합니다") # 종료한다는 메시지 출력하기
         exit(0)
         break
     img = cv2.cvtColor(frame, cv2.IMREAD_COLOR)
