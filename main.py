@@ -84,7 +84,7 @@ while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디
 
     # 우리팀 점수 검출
     print("my team"+str(np.average(avg_color_per_row, axis=1)[14])+" "+str(np.average(avg_color_per_row, axis=1)[16])) # 어느 정도 수가 나오고 있는지 체크하기 위해
-    if(abs(np.average(avg_color_per_row, axis=1)[2]-avg_color1)>gap1 or abs(np.average(avg_color_per_row, axis=1)[16]-avg_color2)>gap2):
+    if(abs(np.average(avg_color_per_row, axis=1)[2]-avg_color1)>gap1 or abs(np.average(avg_color_per_row, axis=1)[16]-avg_color2)>gap2): # 전의 평균값과 차이가 많이 난다면(숫자가 바뀌었다면)
         myTeam+=1
         playsound("./sound/addOnePoint.mp3")
         text=str(myTeam)+"대"+str(redTeam)+"이에요!" # 현재 스코어에 맞는 텍스트 생성
