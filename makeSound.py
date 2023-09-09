@@ -12,7 +12,7 @@ playsound("./sound/addOnePoint.mp3") # 음성 파일 실행하기
 from gtts import gTTS
 from playsound import playsound
 
-text ="상대팀이 1점 얻었어요."
+text ="상대팀이 1점 얻었어요." # 텍스트 문자열
 text = text.encode('utf-8')
 
 tts = gTTS(text=text, lang='ko')
