@@ -17,7 +17,7 @@ text = text.encode('utf-8')
 
 tts = gTTS(text=text, lang='ko')
 tts.speed = 1.8
-tts.save("./sound/addRedTeamOnePoint.mp3")
+tts.save("./sound/addRedTeamOnePoint.mp3") # 음성 파일 저장
 playsound("./sound/addRedTeamOnePoint.mp3")
 
 '''
