@@ -136,7 +136,7 @@ while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디
             avg_color4=24
             count+=1
             print("red 숫자 조정") # 현재 수치 확인할 수 있도록 출력하기
-        tts.save("./sound/now.mp3")
+        tts.save("./sound/now.mp3") # TTS 음성 파일 생성 및 저장
         playsound("./sound/now.mp3") # 음성 파일 실행하기
         os.remove("./sound/now.mp3") # 만든 파일은 바로 지우기!
     
