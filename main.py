@@ -48,7 +48,7 @@ while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디
     # plt.imshow(frame) # 좌표 얻기 위해
     # plt.show()
     if cv2.waitKey(11) & 0xFF == ord('q'): # 재생 속도 변경(11 대신 다른 수를 넣으면 재생 속도가 변경된다!)
-        break
+        break # 반복문 빠져 나가기
 
     # 우리팀 점수
     x, y, w, h = 613, 13, 18, 20
