@@ -42,7 +42,7 @@ while video.isOpened(): # 비디오가 열려있을 경우 계속 반복!(비디
     if not run: # 비디오가 읽히지 않는다면
         print("[프레임 수신 불가] - 종료합니다") # 종료한다는 메시지 출력하기
         exit(0)
-        break
+        break # 반복문 빠져 나가기
     img = cv2.cvtColor(frame, cv2.IMREAD_COLOR)
     cv2.imshow('video', frame)
     # plt.imshow(frame) # 좌표 얻기 위해
